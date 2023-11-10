@@ -1,42 +1,40 @@
-﻿/*Exericio 1 :
 
-Vamos ver como está o conhecimento Crie um projeto para resolver a sequência de fibonacci 1,1,2,3,5,8,13,21 …
-deve pedir o valor a ser calculado 
-ex: 5 
-resposta: 1,1,2,3,5
+Console.WriteLine("========================================================");
+Console.WriteLine("========================================================");
+Console.WriteLine("========= Vamos calcular a sequencia fibonacci ========= \n");
+Console.WriteLine("======================================================== \n");
 
-Exercicio2
-Converter temperatura, deve solicitar a temperatura em celsius e dar a conversão em kelvin e fahrenheit 
-ex: 10 
-respota : 10 graus celsios são 82 °F e 283.15 Kelvin
+int n1 = 0;
+int n2 = 1;
+int n3;
+int Posição = 2;
 
- Converter para Fahrenheit (°F): Fórmula: °F = (°C × 9/5) + 32 Converter para Kelvin (K): Fórmula: K = °C + 273.15*/
+Console.WriteLine("Digite a posição de 1 ao 32 que você gostaria de descobrir na sequencia fibonacci: \n");
 
- /*
-    Fibonachi 0,1,1,2,3,5,8,13,21
-        5 = 3 + 2           8 = 5 + 3
-        3 = 5               5 = 8
-        2 = 3               3 = 5             
-  */
+Console.ForegroundColor = ConsoleColor.DarkBlue;
+Console.WriteLine("O Visual Studio só consegue calcular até esse valor. Depois disso ele quebra os valores.\n");
+Console.ForegroundColor = ConsoleColor.White;
+var NumDesejado = Convert.ToInt32(Console.ReadLine() + "\n \n");
 
-Console.WriteLine("Vamos calcular a sequencia fibonacci");
-Console.WriteLine("==================================== \n");
+Console.WriteLine("========== Fibonnaci =========== \n");
+Console.WriteLine("Sua sequencia Fibonnacci: \n");
 
-{ int a = 0;
-        int b = 1;
-        int soma = 0;
-        }
+Console.WriteLine("Nº 0" + "     ||     Valor Fibonnacci:   " + "0");
+Console.WriteLine("Nº 1" + "     ||     Valor Fibonnacci:   " + "1");
 
-int[] CalculoFibonacci = new int []
-    { 
-        for (int fibonacci = 0; fibonacci <= 10 ; fibonacci++ )
-            {
-                soma = b + a;
-                b = soma;
-                a = b;
-            }
-    }
+//======================================= Fibonacci Certo =================================
 
+for (int calculo = 1; calculo < NumDesejado; calculo++)
+    {
+        n3 = n2 + n1;
+        n1 = n2;
+        n2 = n3;
 
+        Console.WriteLine("Nº " + Posição +"     ||     Valor Fibonnacci:   " + n3);
+        Posição++;
+    };
 
-Console.WriteLine("fim do teste");
+Console.WriteLine("======================================================== \n");
+Console.WriteLine("Fim do Calculo. Espero ter ajudado. =D");
+
+Console.ReadLine();
