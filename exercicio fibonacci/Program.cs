@@ -12,21 +12,31 @@ respota : 10 graus celsios são 82 °F e 283.15 Kelvin
 
  Converter para Fahrenheit (°F): Fórmula: °F = (°C × 9/5) + 32 Converter para Kelvin (K): Fórmula: K = °C + 273.15*/
 
+ /*
+    Fibonachi 0,1,1,2,3,5,8,13,21
+        5 = 3 + 2           8 = 5 + 3
+        3 = 5               5 = 8
+        2 = 3               3 = 5             
+  */
+
 Console.WriteLine("Vamos calcular a sequencia fibonacci");
+Console.WriteLine("==================================== \n");
 
-var FibonacciNUm = 0;
-var FibonacciNDois = 1;
-
-var fibonacciCalculo = FibonacciNUm + FibonacciNDois;
-
-var fibonacciSequencia = fibonacciCalculo+fibonacciCalculo;
-
-Console.WriteLine(fibonacciCalculo);
-Console.WriteLine(fibonacciSequencia);
-
-    While (fibonacciSequencia<5)
-        {
-        fibonacciSequencia = fibonacciCalculo+fibonacciCalculo;
+{ int a = 0;
+        int b = 1;
+        int soma = 0;
         }
 
+int[] CalculoFibonacci = new int []
+    { 
+        for (int fibonacci = 0; fibonacci <= 10 ; fibonacci++ )
+            {
+                soma = b + a;
+                b = soma;
+                a = b;
+            }
+    }
 
+
+
+Console.WriteLine("fim do teste");
