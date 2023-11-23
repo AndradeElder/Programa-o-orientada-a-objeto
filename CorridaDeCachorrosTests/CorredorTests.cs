@@ -22,4 +22,27 @@ public class CorredorTests
         corredor.DistanciaPercorrida().Should().BeLessThanOrEqualTo(distanciaEsperadaMenorQue);
 
     }
+
+    public void Mover0070()
+    {
+        int distanciaPercorrida = Random.Next(0, 7);
+
+        _distanciaPercorrida += (distanciaPercorrida * 0.1);
+    }
+
+    public void Mover3050()
+    {
+        int distanciaPercorrida = Random.Next(3, 5);
+
+        _distanciaPercorrida += (distanciaPercorrida * 0.1);
+    }
+
+    public void Mover2040()
+    {
+        int distanciaPercorrida = Random.Next(2, 4);
+
+        _distanciaPercorrida += (distanciaPercorrida * 0.1);
+    }
+
+
 }
