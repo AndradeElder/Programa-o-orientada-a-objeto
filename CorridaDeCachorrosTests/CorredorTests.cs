@@ -23,6 +23,12 @@ public class CorredorTests
 
     }
 
+
+
+
+
+
+
     public void Mover0070()
     {
         int distanciaPercorrida = Random.Next(0, 7);

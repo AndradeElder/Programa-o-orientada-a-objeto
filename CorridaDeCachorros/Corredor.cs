@@ -31,6 +31,7 @@ public class Corredor : BaseModel
     {
         Cachorro0070 = 0,
         Cachorro3050 = 1,
-        Cachorro2040 = 2
+        Cachorro2040 = 2,
+        Cachorro1060 = 3
     }
 }
